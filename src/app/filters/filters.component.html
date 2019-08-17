@@ -1,0 +1,59 @@
+<div class="py-3 container">
+	<!-- date filter -->
+	<div class="date-filter">  
+		<div class="small-titles mb-2">
+			<i class="fa fa-clock purple-color mr-2"></i> 
+			Date Filter
+		</div>		
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<button class="btn btn-primary input-group-text calendar" (click)="d.toggle()" type="button">
+					<i class="fa fa-calendar"></i>
+				</button>
+			</div>
+			<input class="form-control" 
+			placeholder="yyyy-mm-dd"
+			name="dp"
+			[(ngModel)]="datePicker"
+			(ngModelChange)="setDate($event)"
+			ngbDatepicker
+			[footerTemplate]="footerTemplate"
+			#d="ngbDatepicker" />
+		</div>
+	</div>
+	<!-- seperator -->
+ 	<hr/>
+ 	<!-- topic filter -->
+ 	<div class="topic-filter">  
+		<div class="small-titles mb-2">
+			<i class="fa fa-newspaper purple-color mr-2"></i> 
+			Topic Filter
+		</div>		
+		<div class="custom-control custom-checkbox">
+		    <input 
+		    type="checkbox" 
+		    class="custom-control-input" 
+		    name="topics" 
+		    id="debate" 
+		    value="debate"
+		    (change)="onCheckboxChange($event, 'debate')"
+		    />
+		    <label class="custom-control-label" for="debate">
+		    	Debate
+		    </label>
+		</div>
+		<div class="custom-control custom-checkbox">
+		    <input 
+		    type="checkbox" 
+		    name="topics" 
+		    class="custom-control-input" 
+		    id="economy" 
+		    value="economy"
+		    (change)="onCheckboxChange($event, 'economy')"
+		    />
+		    <label class="custom-control-label" for="economy">
+		    	Economy
+			</label>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,6 @@
+// on break point of sm
+@media (min-width: 576px){
+	aside{
+		min-height: calc(100vh - 70px);	
+	}
+}

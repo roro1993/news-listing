@@ -1,0 +1,94 @@
+@import "./assets/scss/variables.scss"; 
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+// define main classes
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: $lightGray;
+}
+
+hr{
+	border: 0.5px solid $black;	
+}
+
+a{
+	color: $purple;
+	transition: color ease-in 0.5s;
+	&, &:hover{
+		text-decoration: unset;		
+	}
+	&:hover{
+		color: $gray;
+	}
+}
+
+// define color classes
+.white-color{
+	color: $white;
+}
+
+.white-bg{
+	background-color: $white;
+}
+
+.purple-color{
+	color: $lightPurple;
+}
+
+.black-bg{
+	background-color: $black;
+}
+
+.gray-color{
+	color: $gray;
+}
+
+.lighterblack-bg{
+	background-color: $lighterBlack;
+}
+
+// define helper classes
+.small-titles{
+	font-size: 0.8rem;
+}
+
+.cardbox{
+	background-color: $white;
+	box-shadow: 1px 1px 5px $lightPurple;
+	height: calc(100% - 1rem);
+}
+
+.pill{
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 0.8rem;
+	color: $white;
+	font-weight: 500;
+	background-color: $lightPurple;
+}
+
+// overide classes
+.btn-primary{
+	background-color: #e9ecef;
+	border-color: #ced4da;
+	&:hover{
+		background-color: $lightPurple;
+		border-color: $lightPurple;
+	}
+	&:focus{
+		box-shadow:unset;
+	}
+}
+
+.input-group{
+	input{
+		outline: unset;
+		&:focus {
+			box-shadow: unset;
+			border-color: $purple;
+		}
+	}
+}
