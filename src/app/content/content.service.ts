@@ -18,7 +18,7 @@ export class ContentService {
   	// returns an Observable array of content
   	return this.http.get<IContent>(this._url + queryStr)
   	.pipe(
-  		map(response => {
+  		map((response: any) => {
   			// declared as const so that i dont re-assign it
   			const res = [];
   			
@@ -39,7 +39,7 @@ export class ContentService {
 						console.error (error);
 					}
 					res.push({
-							title: dataReturned[key].webTitle,
+						title: dataReturned[key].webTitle,
 					  	publishedDate: date,
 					  	url: dataReturned[key].webUrl,
 					  	tag: dataReturned[key].pillarName

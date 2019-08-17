@@ -7,7 +7,7 @@ import { ContentComponent } from './content/content.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	@ViewChild(ContentComponent) contentRef: ContentComponent;
+	@ViewChild(ContentComponent, {static: false}) contentRef: ContentComponent;
 
   title = 'proximie';
 
