@@ -2,6 +2,8 @@
 
 ![Demo Pic](./demo.gif)
 
+[click to see the demo](https://roro1993.github.io/news-listing/)
+
 The Demo project is responsive using bootstrap 4 with some components built to fit together. 
 
 ### Installations
