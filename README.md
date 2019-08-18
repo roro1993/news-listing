@@ -9,12 +9,21 @@ The Demo project is responsive using bootstrap 4 with some components built to f
 ```
 1- Install NodeJs from NodeJs Official Page.
 2- Open Terminal
-3- Go to your file project
 3- Run in terminal: npm install -g @angular/cli
 4- Then: npm install
-5- And: ng serve
-6- Navigate to: http://localhost:4200/
+5- Install the package to help deploy to github pages:  npm install -g angular-cli-ghpages
 ```
+
+### To Manage the App
+
+```
+1- Open Terminal
+2- Go to your file project: cd /{to_project}
+3- i) To run the project locally: ng serve
+   ii) Navigate to: http://localhost:4200/
+4- To deploy changes to github pages: npm run toGithub
+```
+
 
 ### Files Structures
 
