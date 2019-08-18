@@ -10,6 +10,7 @@ export class AppComponent {
 	@ViewChild(ContentComponent, {static: false}) contentRef: ContentComponent;
 
   title = 'proximie';
+  search: string;
 
   constructor() {}
 
